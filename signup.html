@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myscript.js"></script>
+    <style>
+      body{
+        display:flex;
+        justify-content: center;
+        background-image: url(images/pattern3.jpg);
+    
+      }
+      .signin{
+        width:40%;
+        Height:400px;
+        background-color: bisque;
+        opacity:40%;
+        margin-top: 150px;
+        padding-top:130px;
+        padding-left: 80px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px gray;
+      }
+      input{
+        width:80%;
+        border:none;
+        background-color: transparent;
+        border-bottom: 3px solid navy;
+
+      }
+      .btn{
+        width:20%;
+        border:2px solid navy;
+        background-color: transparent;
+        height:30px;
+        margin-left: 300px;
+        border-radius: 10px;
+        color:navy;
+      }
+      input:focus{
+        outline: none;
+        height:30px;
+        border-bottom: 6px double navy;
+      }
+      .btn:hover{
+        border:none;
+        background-color: navy;
+        color:bisque;
+      }
+      .link{
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .link:hover{
+        font-size: 18px;
+      }
+    </style>
+</head>
+
+<body>
+      <div class="signin">
+        <form action="">
+          <input type="email" placeholder="Enter your Email" required="true"><br><br>
+          <input type="password" placeholder="Enter your password" required="true"><br><br><br><br>
+          <a class="link" href="#">Create new account</a><br>
+          <a  class="link" href="#">Forget password</a><br><br><br>
+          <input class="btn" type="submit" value="Sign In" Onclick="keyboard()">
+        </form>
+      </div>
+</body>
+
+</html>

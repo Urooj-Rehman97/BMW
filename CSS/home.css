@@ -1,0 +1,165 @@
+*{
+    margin:0;
+}
+/* navbar */
+.nav-bar{
+      width:100%;
+      height:80px;
+      background-color:navy;
+      display:flex;
+      justify-content: center;
+ 
+}
+.logo{
+    width:30%;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    width:70%;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 300px;
+ 
+}
+.nav-links ul li{
+    display:inline;
+    padding-left: 30px;
+}
+.logo h1{
+    color:aqua;
+}
+.links a{
+    color:lightyellow;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color:maroon;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+ 
+.links a:active{
+    background-color:azure  ;
+}
+.links a:link{
+    color:maroon;
+}
+.btn1{
+    background-color: transparent;
+    color:lightyellow;
+    border: 2px solid lightyellow;
+    width:80px;
+    height:30px;
+    border-radius: 20px;
+ 
+}
+
+.btn1:hover{
+    background-color:lightyellow;
+    color:navy;
+    border:none;
+}
+/* banner */
+section{
+    width:100%;
+    height:500px;
+    background-color:lightyellow;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text{
+    width:50%;
+    height:200px;
+    color:navy;
+    padding-left: 100px;
+    box-sizing: border-box;
+    padding-right: 50px;
+ 
+
+
+}
+.heading{
+    font-family: cursive;
+}
+.para{
+    padding-top: 30px;
+    word-spacing: 2px;
+
+}
+.image{
+    width:40%;
+    height:300px;
+    padding-top: 80px;
+    padding-left: 100px;
+
+
+}
+.button-section{
+    width:50%;
+    height:100px;
+    padding-top:60px;
+    float:right;
+}
+.btn2{
+    background-color: navy;
+    color:lightyellow;
+    border-radius: 8px;
+    border:none;
+    height:30px;
+    width:100px;
+    transition-property:background-color color border width ;
+    transition-duration: 2s;
+
+}
+.btn3{
+    background-color:transparent;
+    color:navy;
+    border-radius: 5px;
+    border: 3px solid navy;
+    height:30px;
+    width:100px;
+    margin-left:20px;
+    transition-property:background-color color border width ;
+    transition-duration: 2s;
+}
+.btn2:hover{
+    width:120px;
+    background-color: transparent;
+    color:navy;
+    border:3px solid navy;
+ 
+
+}
+.btn3:hover{
+    width:120px;
+    background-color: navy;
+    color:lightyellow;
+    border:none;
+
+}
+.portion{
+    width:100%;
+    height:600px;
+    background-image: url(../images/pattern1.jpg);
+    background-size: cover;
+    margin-bottom: 100px;
+    animation-name: img-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes img-animation{
+    0%{background-image: url(../images/pattern1.jpg);}
+    20%{background-image: url(../images/pattern2.jpg);}
+    40%{background-image: url(../images/pattern3.jpg);}
+    70%{background-image: url(../images/pattern4.jpg);}
+    100%{background-image: url(../images/pattern5.jpg);}
+}

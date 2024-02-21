@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+          width:50%;
+         min-height:100px;
+          border:2px solid black;
+          outline: 4px solid red;
+          outline-offset: 2px;
+          padding:100px;
+          box-sizing: border-box;
+          margin:20px;
+          box-shadow: 5px 5px 20px 2px grey;
+          background-image: url(BMW/images/rose.jfif);
+          background-size: cover;
+        } */
+        body{
+          display:grid;
+          grid-template-columns:repeat(3,auto); /* grid template column defines number of columns*/
+          grid-template-rows: 80px 100px 200px 200px 200px 120px; /* grid template rows defines number of rows*/
+          row-gap: 2px; /* gap between rows*/
+          column-gap: 4px; /* gap between columns*/
+        }
+        .header{
+          background-color: aqua;
+          grid-column-start:1;
+          grid-column-end:4;
+        }
+        .menu{
+          background-color: brown;
+          grid-column-start:1;
+          grid-column-end:4;
+        }
+        .content1{
+          background-color: cadetblue;
+        }
+        .content2{
+          background-color: darkgreen;
+        }
+        .sidebar{
+          background-color: cornflowerblue;
+          grid-row:3/5;
+          grid-column: 3/4;
+        }
+        .content3{
+          background-color:darkolivegreen;
+          grid-column-start:1;
+          grid-column-end:3;
+        }
+        .footer{
+          background-color: aqua;
+          grid-column-start:1;
+          grid-column-end:4;
+        }
+        *{
+          margin:0;
+        }
+  </style>
+</head>
+<body>
+    <section class="header">Header</section>
+    <section class="menu">Menu</section>
+    <section class="content1">Content1</section>
+    <section class="content2">Content2</section>
+    <section class="sidebar">Sidebar</section>
+    <section class="content3">Content3</section>
+    <section class="footer">Footer</section>
+</body>
+</html>

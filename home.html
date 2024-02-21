@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/home.css">
+  <title>My Visual Creations</title>
+  <script src="myscript.js"></script>
+</head>
+
+<body onkeyup="press()">
+  <h1 id="name"></h1>
+  <!-- navbar -->
+  <div class="nav-bar">
+    <div class="logo">
+      <h1>VisualCreations</h1>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li class="links"><a href="#">MyVisuals</a></li>
+        <li class="links"><a href="#">About us</a></li>
+        <li class="links"><a href="#">Contact Us</a></li>
+        <li class="links"><a href="#">Blog</a></li>
+        <li class="links"><a href="#"><button class="btn1">Sign In</button></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- banner -->
+  <section>
+    <div class="text">
+      <h1 class="heading">What is Visual Creations?</h1>
+      <p class="para">Visual creation is a professional area of exploring and experimentation located at the limits of design. It's
+        the result of its growing interest on the art disciplines surrounding it.</p>
+        <div class="button-section">
+          <button class="btn2">Sign Up</button>
+          <button class="btn3">Log In</button>
+        </div>
+    </div>
+    <div class="image"><img width="80%" src="images/visual-removebg-preview.png"/></div>
+  </section>
+  <!-- image animation -->
+         <div class="portion"></div>
+  
+  <script>
+    // function keyboard(){
+    //   alert("Please Signed in to enjoy our services");
+    // }
+   
+       var a=sessionStorage.getItem("Username");
+       document.getElementById("name").innerText = "Welocme "+a;
+
+  </script>
+         
+</body>
+
+</html>

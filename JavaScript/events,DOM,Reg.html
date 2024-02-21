@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #usererror{
+        color:red;
+      }
+      #result{
+        width:150px;
+        height:20px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+      }
+    </style>
+</head>
+<body>    
+<!-- validation -->
+<h1>Form Validation</h1>
+  <input type="text" id="username" placeholder="User Name"><br>
+  <p id="usererror"></p>
+  <input type="password" id="password" placeholder="Password"><br>
+  <p id="passerror"></p>
+  <input type="submit" onclick="validation()">
+
+  <!-- calculator -->
+  <h1>Calculator</h1>
+  <input type="number" id="num1"><br><br>
+  <input type="number" id="num2"><br><br>
+  <div id="result"></div>
+  <button onclick="maths('+')">+</button>
+  <button onclick="maths('-')">-</button>
+  <button onclick="maths('*')">*</button>
+  <button onclick="maths('/')">/</button>
+  <!-- counter -->
+  <h1>Counter</h1>
+  <button onclick="subcounter()">-</button><input type="text" id="count" value="0"><button onclick="addcounter()">+</button>
+  <!-- regular expression -->
+  <h1>Regular Expression</h1>
+  <input type="text" id="email" placeholder="enter your email">
+ 
+  <button onclick="validate()">submit</button>
+<script>
+  //validation
+  function validation(){
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+    if(username==""){
+       document.getElementById("usererror").innerText="Must Enter your UserName";
+       
+    }
+    if(password==""){
+         document.getElementById("passerror").innerText="Must Enter your Password";
+    }
+  }
+  // //calculator
+  function maths(op){
+    var num1=parseInt(document.getElementById("num1").value);
+    var num2=parseInt(document.getElementById("num2").value);
+    document.getElementById("result").innerText=eval(num1+op+num2);
+  }
+  //counter
+  function addcounter(){
+    var add=document.getElementById("count").value;
+    document.getElementById("count").value = ++add;
+  }
+  function subcounter(){
+    var sub=document.getElementById("count").value;
+    if(sub>0){
+    document.getElementById("count").value =--sub;
+  }
+}
+function validate(){
+  var pattern=/\w+@[a-z]+\.[a-z]{2,4}/;
+  var email=document.getElementById("email").value;
+  if(pattern.test(email)){
+    alert("Login");
+  }else{
+    alert("Invalid");
+  }
+}
+
+
+
+ 
+</script>
+</body>
+</html>
